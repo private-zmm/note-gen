@@ -5,6 +5,7 @@
   :root {
     --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;
+    --activeBackground: 240 10% 3.9%;
     --card: 0 0% 100%;
     --card-foreground: 240 10% 3.9%;
     --popover: 0 0% 100%;
@@ -29,8 +30,7 @@
     --chart-3: 197 37% 24%;
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
-    --radius: 0.5rem
-  ;
+    --radius: 0.5rem;
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
     --sidebar-primary: 240 5.9% 10%;
@@ -38,10 +38,12 @@
     --sidebar-accent: 240 4.8% 95.9%;
     --sidebar-accent-foreground: 240 5.9% 10%;
     --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%}
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
   .dark {
     --background: 240 10% 3.9%;
     --foreground: 0 0% 98%;
+    --activeBackground: 0 0% 98%;
     --card: 240 10% 3.9%;
     --card-foreground: 0 0% 98%;
     --popover: 240 10% 3.9%;
@@ -63,8 +65,7 @@
     --chart-2: 160 60% 45%;
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
-    --chart-5: 340 75% 55%
-  ;
+    --chart-5: 340 75% 55%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -72,7 +73,101 @@
     --sidebar-accent: 240 3.7% 15.9%;
     --sidebar-accent-foreground: 240 4.8% 95.9%;
     --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%}
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+  .red {
+    --background: 0 0% 100%; /* 默认背景 */
+    --foreground: 240 10% 3.9%; /* ✅ 深红色文字 */
+    --activeBackground: 0 70% 20%; /* ✅ 深红色文字 */
+
+    --card: 0 90% 98%;
+    --card-foreground: 0 70% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 70% 20%;
+
+    --primary: 0 85% 60%; /* 主按钮红色 */
+    --primary-foreground: 0 0% 100%; /* 白色文字 */
+
+    --secondary: 0 70% 90%; /* 次级浅红背景 */
+    --secondary-foreground: 0 70% 20%;
+
+    --third: 0 60% 85%;
+    --third-foreground: 0 70% 20%;
+
+    --muted: 0 70% 90%;
+    --muted-foreground: 0 60% 40%;
+
+    --accent: 0 75% 85%;
+    --accent-foreground: 0 70% 20%;
+
+    --destructive: 0 90% 50%; /* 错误色保留红 */
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 240 5.9% 90%; /* 默认灰色边框 */
+    --input: 0 80% 85%; /* 浅红输入框 */
+
+    --ring: 0 90% 55%;
+
+    --chart-1: 0 80% 60%;
+    --chart-2: 345 75% 55%;
+    --chart-3: 10 85% 55%;
+    --chart-4: 0 90% 70%;
+    --chart-5: 355 85% 60%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 0 70% 20%;
+    --sidebar-primary: 0 85% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 75% 85%;
+    --sidebar-accent-foreground: 0 70% 20%;
+
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 0 90% 55%;
+  }
+  .green {
+    --background: 0 0% 100%; /* 使用默认背景 */
+    --foreground: 240 10% 3.9%;
+    --activeBackground: 140 50% 20%;
+    --card: 0 90% 98%; /* 卡片背景 */
+    --card-foreground: 240 10% 3.9%; /* 默认前景 */
+    --popover: 0 0% 100%; /* 默认背景 */
+    --popover-foreground: 140 50% 20%;; /* 默认前景 */
+    --primary: 140 60% 40%; /* 主绿色 */
+    --primary-foreground: 0 0% 100%; /* 白色字体 */
+    --secondary: 140 50% 85%; /* 浅绿背景 */
+    --secondary-foreground: 140 90% 20%; /* 深绿字体 */
+    --third: 150 45% 80%; /* 第三色 */
+    --third-foreground: 140 90% 20%;
+    --muted: 140 50% 90%;
+    --muted-foreground: 140 30% 40%;
+    --accent: 140 55% 88%;
+    --accent-foreground: 140 70% 25%;
+    --destructive: 4 90% 60%; /* 保留红色错误色 */
+    --destructive-foreground: 0 0% 100%;
+    --border: 240 5.9% 90%; /* 使用默认 */
+    --input: 140 50% 85%; /* 浅绿输入框 */
+    --ring: 140 65% 45%; /* 强调绿色边框 */
+    --chart-1: 140 70% 40%;
+    --chart-2: 150 65% 45%;
+    --chart-3: 130 60% 35%;
+    --chart-4: 160 55% 50%;
+    --chart-5: 120 60% 45%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%; /* 默认 */
+    --sidebar-foreground: 140 80% 20%; /* 深绿文字 */
+    --sidebar-primary: 140 65% 40%; /* 主绿色 */
+    --sidebar-primary-foreground: 0 0% 100%; /* 白字 */
+    --sidebar-accent: 140 55% 88%;
+    --sidebar-accent-foreground: 140 70% 25%;
+
+    --sidebar-border: 220 13% 91%; /* 默认边框 */
+    --sidebar-ring: 140 65% 45%;
+  }
 }
 @layer base {
   * {
@@ -83,15 +178,16 @@
   }
 }
 
-html, body {
+html,
+body {
   @apply h-screen overflow-hidden;
 }
 
 .file-manange-item {
   @apply flex items-center gap-1 py-1 text-sm cursor-pointer w-full hover:bg-zinc-100 dark:hover:bg-zinc-800 text-black dark:text-white;
-  &.active{
+  &.active {
     @apply bg-third text-third-foreground dark:bg-third-foreground dark:text-white font-bold;
-    .bg-primary-foreground{
+    .bg-primary-foreground {
       @apply bg-third dark:bg-third-foreground;
     }
   }
@@ -103,7 +199,7 @@ html, body {
   }
 
   &::-webkit-scrollbar-track {
-    @apply bg-transparent
+    @apply bg-transparent;
   }
 
   &::-webkit-scrollbar-thumb {
@@ -111,14 +207,14 @@ html, body {
   }
 }
 
-.setting-anchor{
+.setting-anchor {
   @apply text-sm w-full hover:bg-accent px-4 py-2 rounded cursor-pointer flex gap-2 items-center;
   svg {
     @apply size-4;
   }
 }
 
-.search-highlight{
+.search-highlight {
   @apply bg-secondary-foreground text-secondary px-1;
 }
 

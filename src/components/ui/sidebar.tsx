@@ -535,7 +535,7 @@ const sidebarMenuButtonVariants = cva(
   group-has-[[data-sidebar=menu-action]]/menu-item:pr-8
   aria-disabled:pointer-events-none
   aria-disabled:opacity-50
-  data-[active=true]:bg-foreground
+  data-[active=true]:bg-activeBackground
   data-[active=true]:font-medium
   data-[active=true]:text-background
   data-[state=open]:hover:bg-sidebar-accent

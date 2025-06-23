@@ -49,6 +49,7 @@ export default function RootLayout({
       attribute="class"
       defaultTheme="system"
       enableSystem
+      themes={["light", "dark", "red", "green"]}  // ✅ 明确注册你的主题
       disableTransitionOnChange
     >
       <SidebarProvider>

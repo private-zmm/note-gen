@@ -12,6 +12,8 @@
     "theme": "Theme",
     "light": "Light",
     "dark": "Dark",
+    "red": "Red",
+    "green": "Green",
     "system": "System",
     "pin": "Pin",
     "unpin": "Unpin",

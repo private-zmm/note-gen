@@ -1,7 +1,7 @@
 "use client"
 
 import * as React from "react"
-import { Moon, Sun, SunMoon } from "lucide-react"
+import { Moon, Sun, SunMoon, FlagTriangleRight, LeafyGreen } from "lucide-react"
 import { useTheme } from "next-themes"
 import { useTranslations } from 'next-intl'
 import {
@@ -55,6 +55,14 @@ export function ModeToggle() {
           <Moon className="mr-2 h-4 w-4" />
           <span>{t('common.dark')} {theme === "dark" && "✓"}</span>
         </DropdownMenuItem>
+        <DropdownMenuItem onClick={() => setTheme("red")}>
+          <FlagTriangleRight className="mr-2 h-4 w-4" />
+          <span>{t('common.red')} {theme === "red" && "✓"}</span>
+        </DropdownMenuItem>
+        <DropdownMenuItem onClick={() => setTheme("green")}>
+          <LeafyGreen className="mr-2 h-4 w-4" />
+          <span>{t('common.green')} {theme === "green" && "✓"}</span>
+        </DropdownMenuItem>
         <DropdownMenuItem onClick={() => setTheme("system")}>
           <SunMoon className="mr-2 h-4 w-4" />
           <span>{t('common.system')} {theme === "system" && "✓"}</span>
@@ -70,6 +78,10 @@ function ThemeIcon({ theme }: { theme?: string }) {
       return <Sun />
     case "dark":
       return <Moon />
+    case "red":
+      return <FlagTriangleRight  />
+    case "green":
+      return <LeafyGreen   />  
     case "system":
       return <SunMoon />
     default:
